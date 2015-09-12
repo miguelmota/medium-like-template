@@ -1,10 +1,10 @@
 {
-  "name": "custom-bootstrap-kickstart",
-  "version": "0.1.0",
+  "name": "medium-like-template",
+  "version": "0.0.1",
   "authors": [
-    "wizardzloy <wizardzloy@gmail.com>"
+    "Miguel Mota <miguelmota2@gmail.com>"
   ],
-  "description": "Tiny setup for kickstarting a new front-end project based on the custom Bootstrap build",
+  "description": "Medium-like Template",
   "keywords": [
     "bootstrap",
     "less",
@@ -14,11 +14,6 @@
   ],
   "dependencies": {
     "bootstrap": "~3.1.1"
-  },
-  "overrides": {
-    "bootstrap": {
-      "main": ["less/!(variables).less", "./dist/fonts/*", "./dist/js/bootstrap.js"]
-    }
   },
   "license": "MIT",
   "private": true

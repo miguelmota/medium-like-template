@@ -5,11 +5,9 @@ var less = require('gulp-less');
 var path = require('path');
 
 gulp.task('less', function () {
-  return gulp.src('./src/less/**.less')
-    .pipe(less({
-      paths: [ path.join(__dirname, 'less', 'includes') ]
-    }))
-    .pipe(gulp.dest('./src/stylesheets'));
+  return gulp.src('./src/less/main.less')
+  .pipe(less())
+  .pipe(gulp.dest('./src/stylesheets'));
 });
 
 gulp.task('watch', function watch() {

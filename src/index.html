@@ -4,28 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=yes">
   <title>This is a Title</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Gentium+Book+Basic:italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body>
   <main class="main">
     <header class="header">
-      <img class="header__background" src="images/hero.png" alt="Hero image">
       <div class="header__inner">
         <hgroup class="header__hgroup">
           <h1 class="header__hgroup__title">This is a Title</h1>
           <p class="header__hgroup__tagline">This is an awesome headline</p>
         </hgroup>
-        <footer class="header__footer">
-          <div class="header__footer__author">
+        <footer class="header__footer row">
+          <div class="header__footer__author col-md-8 col-sm-8 col-xs-12">
             <div class="header__footer__author__written">Written By</div>
             <div class="header__footer__author__summary">
               Arthur <span class="header__footer__author__summary__name">Guillerin Hazan</span> <img class="header__footer__author__summary__avatar" src="images/avatar.png" alt="Avatar">
             </div>
           </div>
-          <div class="header__footer__share">
+          <div class="header__footer__share col-md-4 col-sm-4 col-xs-12">
             <a href="#" class="header__footer__share__button header__footer__share__button--star" aria-label="star article"></a>
             <a href="#" class="header__footer__share__button header__footer__share__button--heart" aria-label="heart article"></a>
             <a href="#" class="header__footer__share__button header__footer__share__button--share" aria-label="share article"></a>
@@ -63,7 +61,7 @@
       </article>
 
       <div class="content__back-to-top">
-        <a href class="content__back-to-top__link">Back To Top</a>
+        <a href="#" class="content__back-to-top__link">Back To Top</a>
       </div>
 
       <div class="content__share">
@@ -71,17 +69,30 @@
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="footer__column">
-        <div class="foolter__column__background"></div>
-        <div class="">
-          Seaside
+    <footer class="footer row">
+      <div class="footer__column footer__column--one col-md-6 col-xs-12">
+        <div class="footer__column__next">
+          <p class="footer__column__next__desc">Next in your Reading List</p>
+          <h5 class="footer__column__next__title">
+            Seaside, no thanks...
+          </h5>
+          <h6 class="footer__column__next__tagline">
+            This is an awesome headline
+          </h6>
         </div>
       </div>
-      <div class="footer__column">
+      <div class="footer__column footer__column--two col-md-6 col-xs-12">
+        <div class="footer__column__next">
+          <p class="footer__column__next__desc">Next in your Reading List</p>
+          <h5 class="footer__column__next__title">
+            Roma, bella vita...
+          </h5>
+          <h6 class="footer__column__next__tagline">
+            This is an awesome headline
+          </h6>
+        </div>
       </div>
     </footer>
   </main>
 </body>
 </html>
-

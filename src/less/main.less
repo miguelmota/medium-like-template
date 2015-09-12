@@ -1,0 +1,208 @@
+/**
+ BEM convention
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+@body-background: #fff;
+@body-font-family: 'Gentium Book Basic', serif;
+
+/* Header */
+@header-height: 770px;
+@header-color: #fff;
+@header-tagline-color: #d7d7d7;
+@header-tagline-font-family: 'Open Sans', sans-serif;
+@header-author-font-family: 'Open Sans', sans-serif;
+
+/* Article */
+@article-max-width: 750px;
+@article-paragraph-color: #191919;
+@article-blockquote-color: #626262;
+@article-share-button-color: #2ecc71;
+@article-share-button-font-family: 'Open Sans', sans-serif;
+
+body {
+  background: @body-background;
+  font-family: @body-font-family;
+}
+
+
+/**
+  * HEADER
+  */
+.header {
+  width: 100%;
+  min-height: @header-height;
+  overflow: hidden;
+  position: relative;
+
+  &__background {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  &__inner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: @header-color;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+
+  &__hgroup {
+    margin: 0 auto;
+    max-width: @article-max-width;
+    border-bottom: 2px solid @header-color;
+    margin-bottom: 20px;
+
+    &__title {
+      font-size: 56px;
+      margin-bottom: 0;
+    }
+
+    &__tagline {
+      font-size: 32px;
+      color: @header-tagline-color;
+      font-family: @header-tagline-font-family;
+    }
+  }
+
+  &__footer {
+    margin: 0 auto;
+    max-width: @article-max-width;
+
+    &__author {
+      font-family: @header-author-font-family;
+      font-size: 16px;
+      width: 70%;
+      display: inline-block;
+
+      &__written {
+        text-transform: uppercase;
+        color: @header-tagline-color;
+        font-size: 14px;
+      }
+
+      &__summary {
+        &__name {
+
+        }
+
+        &__avatar {
+          max-width: 28px;
+          object-fit: contain;
+          margin-left: 10px;
+        }
+      }
+    }
+
+    &__share {
+      float: right;
+      width: 30%;
+      display: inline-block;
+      text-align: right;
+
+      &__button {
+        width: 20px;
+        height: 20px;
+        background-size: contain;
+        margin-left: 20px;
+        display: inline-block;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &--star {
+          background: transparent url(../images/star.png) no-repeat center center;
+        }
+
+        &--heart {
+          background: transparent url(../images/heart.png) no-repeat center center;
+        }
+
+        &--share {
+          background: transparent url(../images/share.png) no-repeat center center;
+        }
+      }
+    }
+  }
+
+}
+
+/**
+  * CONTENT
+  */
+.content {
+  &__article {
+    max-width: @article-max-width;
+    margin: 0 auto;
+    padding: 55px 20px;
+
+    p {
+      font-size: 24px;
+      line-height: 2;
+      padding-bottom: 30px;
+      color: @article-paragraph-color;
+    }
+
+    blockquote {
+      display: block;
+      font-size: 32px;
+      padding: 30px 10px;
+      border: none;
+      color: @article-blockquote-color;
+      text-align: center;
+    }
+  }
+
+  &__share {
+    background: #5a6867 url(../images/site-footer-gradient.png) no-repeat 0 0;
+    background-size: cover;
+    padding: 100px 20px;
+    text-align: center;
+
+    &__button {
+      display: inline-block;
+      font-size: 14px;
+      font-family: @article-share-button-font-family;
+      padding: 18px 20px;
+      border-radius: 30px;
+      border: 2px solid @article-share-button-color;
+      color: @article-share-button-color;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        border-color: lighten(@article-share-button-color, 10%);
+        color: lighten(@article-share-button-color, 10%);
+        text-decoration: none;
+      }
+
+      &__icon {
+        display: inline-block;
+        width: 13px;
+        height: 12px;
+        margin-right: 4px;
+        background: transparent url(../images/share-green.png) no-repeat 0 0;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+
+/**
+  * FOOTER
+  */
+.footer {
+
+}

@@ -41,11 +41,15 @@
 @footer-tagline-font-family: 'Gentium Book Basic', sans-serif;
 @footer-tagline-color: #d7d7d7;
 
+/* Body */
 body {
   background: @body-background;
   font-family: @body-font-family;
-}
 
+  .main {
+    overflow-x: hidden;
+  }
+}
 
 /**
   * HEADER
@@ -55,7 +59,7 @@ body {
   min-height: @header-height;
   overflow: hidden;
   position: relative;
-  background: transparent url(../images/hero.png) no-repeat 0 0;
+  background: transparent url(../images/hero.jpg) no-repeat 0 0;
   background-size: cover;
 
   @media @mobile {
@@ -144,7 +148,8 @@ body {
         text-decoration: none;
 
         &:hover,
-        &:active {
+        &:active,
+        &:focus {
           text-decoration: none;
         }
 
@@ -200,7 +205,7 @@ body {
   }
 
   &__share {
-    background: #5a6867 url(../images/site-footer-gradient.png) no-repeat 0 0;
+    background: #5a6867 url(../images/site-footer-gradient.jpg) no-repeat 0 0;
     background-size: cover;
     padding: 100px 20px;
     text-align: center;
@@ -221,7 +226,8 @@ body {
       text-decoration: none;
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         border-color: lighten(@article-share-button-color, 10%);
         color: lighten(@article-share-button-color, 10%);
         text-decoration: none;
@@ -251,7 +257,8 @@ body {
       font-family: @article-back-to-top-font-family;
 
       &:hover,
-      &:active {
+      &:active,
+      &:focus {
         color: darken(@article-back-to-top-color, 10%);
         text-decoration: none;
       }
@@ -284,7 +291,7 @@ body {
     }
 
     &--one {
-      background: transparent url(../images/footer-left-thumbnail.png) no-repeat 0 0;
+      background: transparent url(../images/footer-left-thumbnail.jpg) no-repeat 0 0;
       background-size: cover;
       border-right: 2px solid #6F6F6F;
 
@@ -295,7 +302,7 @@ body {
     }
 
     &--two {
-      background: transparent url(../images/footer-right-thumbnail.png) no-repeat 0 0;
+      background: transparent url(../images/footer-right-thumbnail.jpg) no-repeat 0 0;
       background-size: cover;
     }
 

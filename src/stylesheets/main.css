@@ -11,9 +11,13 @@
 /* Header */
 /* Article */
 /* Footer */
+/* Body */
 body {
   background: #ffffff;
   font-family: 'Gentium Book Basic', serif;
+}
+body .main {
+  overflow-x: hidden;
 }
 /**
   * HEADER
@@ -23,7 +27,7 @@ body {
   min-height: 770px;
   overflow: hidden;
   position: relative;
-  background: transparent url(../images/hero.png) no-repeat 0 0;
+  background: transparent url(../images/hero.jpg) no-repeat 0 0;
   background-size: cover;
 }
 @media only screen and (max-width: 529px) {
@@ -104,7 +108,8 @@ body {
   text-decoration: none;
 }
 .header__footer__share__button:hover,
-.header__footer__share__button:active {
+.header__footer__share__button:active,
+.header__footer__share__button:focus {
   text-decoration: none;
 }
 .header__footer__share__button--star {
@@ -149,7 +154,7 @@ body {
   }
 }
 .content__share {
-  background: #5a6867 url(../images/site-footer-gradient.png) no-repeat 0 0;
+  background: #5a6867 url(../images/site-footer-gradient.jpg) no-repeat 0 0;
   background-size: cover;
   padding: 100px 20px;
   text-align: center;
@@ -171,7 +176,8 @@ body {
   text-decoration: none;
 }
 .content__share__button:hover,
-.content__share__button:active {
+.content__share__button:active,
+.content__share__button:focus {
   border-color: #54d98c;
   color: #54d98c;
   text-decoration: none;
@@ -197,7 +203,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 .content__back-to-top__link:hover,
-.content__back-to-top__link:active {
+.content__back-to-top__link:active,
+.content__back-to-top__link:focus {
   color: #c0c0c0;
   text-decoration: none;
 }
@@ -225,7 +232,7 @@ body {
   }
 }
 .footer__column--one {
-  background: transparent url(../images/footer-left-thumbnail.png) no-repeat 0 0;
+  background: transparent url(../images/footer-left-thumbnail.jpg) no-repeat 0 0;
   background-size: cover;
   border-right: 2px solid #6F6F6F;
 }
@@ -236,7 +243,7 @@ body {
   }
 }
 .footer__column--two {
-  background: transparent url(../images/footer-right-thumbnail.png) no-repeat 0 0;
+  background: transparent url(../images/footer-right-thumbnail.jpg) no-repeat 0 0;
   background-size: cover;
 }
 .footer__column__next__desc {

@@ -1,6 +1,6 @@
 # Medium-like Template
 
-[http://lab.moogs.io/medium-like-template](http://lab.moogs.io/medium-like-template)
+[https://lab.miguelmota.com/medium-like-template](https://lab.miguelmota.com/medium-like-template)
 
 <img src="./screenshot.png" width="500">
 
